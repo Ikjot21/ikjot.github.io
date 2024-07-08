@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikjot Singh's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ikjot Singh's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#summary" onclick="showTab('summary')">Summary</a></li>
+                <li><a href="#skills" onclick="showTab('skills')">Skills</a></li>
+                <li><a href="#work-experience" onclick="showTab('work-experience')">Work Experience</a></li>
+                <li><a href="#education" onclick="showTab('education')">Education</a></li>
+                <li><a href="#projects" onclick="showTab('projects')">Projects</a></li>
+                <li><a href="#personal-info" onclick="showTab('personal-info')">Personal Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="summary" class="tab-content">
+            <h2 onclick="toggleDetails('summary-details')">Summary</h2>
+            <div id="summary-details" class="details">
+                <p>Dynamic mobile app developer with a knack for crafting innovative and user-friendly applications. As a backend developer blending technical expertise with creative problem-solving. Driven by a passion for cutting-edge technology, I constantly push the boundaries to deliver standout solutions. Currently seeking a seven-week co-op opportunity from 3 September to 18 October to further enhance skills and contribute to impactful projects within a forward-thinking organization.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="tab-content">
+            <h2 onclick="toggleDetails('skills-details')">Skills</h2>
+            <div id="skills-details" class="details">
+                <ul id="skills-list">
+                    <!-- Skills will be added dynamically by JavaScript -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="work-experience" class="tab-content">
+            <h2 onclick="toggleDetails('work-experience-details')">Work Experience</h2>
+            <div id="work-experience-details" class="details">
+                <p>Backend Developer at Jio Platforms Limited (June 2019 - Sept 2023)</p>
+                <ul>
+                    <li>Led the development of high-performance RESTful APIs with Node.js and Express.</li>
+                    <li>Enhanced MySQL and MongoDB databases, improving query performance by 30%.</li>
+                    <li>Implemented robust security measures, including JWT authentication.</li>
+                    <li>Managed and deployed applications on AWS, using EC2, S3, and RDS.</li>
+                    <li>Streamlined version control and collaboration with Git and GitHub.</li>
+                    <li>Developed API documentation with Swagger.</li>
+                    <li>Led testing processes using Jest and Mocha.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="tab-content">
+            <h2 onclick="toggleDetails('education-details')">Education</h2>
+            <div id="education-details" class="details">
+                <p>Cambrian College, Toronto, Ontario</p>
+                <ul>
+                    <li>Mobile Application Development - Post Graduate Certificate (Jan 2024 - Present)</li>
+                </ul>
+                <p>Online Learning</p>
+                <ul>
+                    <li>Google IT Automation with Python Professional Certificate (Sept 2018)</li>
+                    <li>Programming in C++</li>
+                    <li>Back-End Developer Professional Certificate</li>
+                </ul>
+                <p>CLDU, Sirsa, India</p>
+                <ul>
+                    <li>Bachelor of Laws (July 2015 - June 2018)</li>
+                    <li>Bachelor of Commerce – Honors (July 2012 - June 2015)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-content">
+            <h2 onclick="toggleDetails('projects-details')">Projects</h2>
+            <div id="projects-details" class="details">
+                <ul>
+                    <li>BMI Calculator: Developed a BMI calculator app for user health tracking using Kotlin and Firebase.</li>
+                    <li>Music Player: Created an app with playlist and media control features using Kotlin and Firebase.</li>
+                    <li>Diary & Event Calendar: Built a CRUD-based diary and event manager using Kotlin and Firebase.</li>
+                    <li>Ebook/PDF Reader: Designed an app for viewing documents using Kotlin, Java, and Python (Flask).</li>
+                    <li>Calculator: Implemented an app for various calculations using Kotlin and Java.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="personal-info" class="tab-content">
+            <h2 onclick="toggleDetails('personal-info-details')">Personal Information</h2>
+            <div id="personal-info-details" class="details">
+                <p>Name: Ikjot Singh</p>
+                <p>Age: 23</p>
+                <p>Email: ikjotsingh@example.com</p>
+                <p>Address: Toronto, ON</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: Tel: 289-968-6700 | Email: ikjot021@gmail.com | <a href="https://linkedin.com/in/ikjot">LinkedIn</a> | Address: 356 Glenlake Ave, Toronto</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
